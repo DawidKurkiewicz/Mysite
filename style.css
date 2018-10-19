@@ -1,0 +1,116 @@
+
+.section-tech__container {
+    display: flex;
+    justify-content: center;
+    background: grey;
+    border: 1px solid black;
+
+
+}
+
+.section-tech__child {
+    text-align: center;
+}
+
+.section-tech__header {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.section-tech__text {
+    box-sizing: border-box;
+    font-size: 1.25em;
+    font-weight: 900;
+    text-align: center;
+    max-width: 280px; 
+    max-height: 280px;
+   
+
+}
+
+.section-tech__photo {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    width: 150px;
+    height: 150px;
+    background-color: slategray;
+    overflow: hidden;
+}
+.logo-img{
+    max-width: 130px;
+    max-height: 130px;
+}
+.section-me__container{
+    display: flex;
+    justify-content: center;
+    background: grey;
+    border: 1px solid black;
+}
+.section-me__text {
+    max-width: 320px;
+}
+.section-hero__container {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Salto_del_Angel-Canaima-Venezuela08.JPG/1200px-Salto_del_Angel-Canaima-Venezuela08.JPG);
+}
+.section-hero__container{
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    background-image:url(https://images.unsplash.com/photo-1523952578875-e6bb18b26645?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1b3a958055fc90b479ebd648997c238&w=1000&q=80);
+    background-size:100% 100%;
+    max-height: 500px;
+ }
+ .section-menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+ }
+ .section-menu__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+ }
+ .section-menu__list__item {
+    background-color: grey;
+    flex-grow: 1;
+}
+.section-menu__list__link{
+    text-align: center;
+    display: block;
+    padding: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .section-me__container {
+        display:flex;
+        flex-direction: column-reverse;
+
+    }
+    .section-tech__container {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .section-tech__text{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .back-img{
+        margin: 0 auto;
+    }
+
+  
+}
