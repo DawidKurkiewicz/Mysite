@@ -3,6 +3,7 @@ body{
     margin: 0;
     background: grey;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 .section-tech__container {
     display: flex;
