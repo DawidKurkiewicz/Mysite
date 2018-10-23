@@ -35,7 +35,7 @@ body{
     background-color: slategray;
     overflow: hidden;
 }
-.section-tech__photo__margin{
+.section-tech__photo--argin{
     margin: 0 auto 20px;
     display: flex;
     justify-content: center;
@@ -70,6 +70,7 @@ body{
     color: white;
     font-size: 60px;
     font-style: italic;  
+    text-align: center;
 }
 .section-hero__container{
     width:100%;
@@ -98,11 +99,11 @@ body{
     padding: 0;
     margin: 0;
  }
- .section-menu__list__item {
+ .section-menu__list--item {
     background-color: grey;
     flex-grow: 1;
 }
-.section-menu__list__link{
+.section-menu__list--link{
     background:#383838;
     text-align: center;
     display: block;
