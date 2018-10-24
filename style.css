@@ -35,7 +35,7 @@ body{
     background-color: slategray;
     overflow: hidden;
 }
-.section-tech__photo--argin{
+.section-tech__photo--margin{
     margin: 0 auto 20px;
     display: flex;
     justify-content: center;
