@@ -65,13 +65,12 @@ body{
 .section-tech__title {
     margin: 0;
     padding: 20px;
-    font-size: 30px;
+    font-size: 35px;
     text-transform: uppercase;
     text-align: center;
 }
 .section-tech__container {
     display: flex;
-    justify-content: center;
     justify-content:space-around;
 }
 .section-tech__child {
@@ -81,8 +80,6 @@ body{
 
 .section-tech__text {
     box-sizing: border-box;
-    font-size: 1.25em;
-    font-weight: 900;
     text-align: center;
     max-width: 280px;
     max-height: 280px;
@@ -105,11 +102,12 @@ body{
 }
 .section-me__container{
     display: flex;
-    justify-content: center;
     background: grey;
     margin: 20px 0px;
     align-items: center;
-    justify-content: space-around;
+    max-width: 1400px;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 .section-me__title {
     text-align: center;
@@ -120,15 +118,19 @@ body{
   }
 .section-me__text{
     margin-left: 25px;
-    text-align: center;
+    text-align: justify;
     margin-right: 25px;
     flex-basis: 60%
 }
 .section-hero__header{
-    color: white;
     font-size: 60px;
     text-align: center;
+    text-transform:  uppercase;
 }
+.section-hero__text {
+    text-align: center;
+}
+
 .section-hero__container{
     width:100%;
     height:100vh;
@@ -139,6 +141,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
  }
  .section-menu__list{
         display: flex;
@@ -168,6 +171,7 @@ body{
     border-width:10px;
     border-style:ridge groove;
     border-radius:50%;
+    margin: 20px;
 
 }
 .Footer {
@@ -200,6 +204,15 @@ body{
   .cookies__hidden {
     display: none;
   }
+  .social-logo{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+.section-me__logos{
+    display: flex;
+    flex-direction: column;
+}
 @media only screen and (max-width: 768px) {
     .section-me__container {
         display:flex;
@@ -221,6 +234,9 @@ body{
         display: flex;
         flex-direction: column;
     }
+    .section-me__logos{
+        flex-direction: row;
+    }
 }
 
 
@@ -231,9 +247,7 @@ body{
         display: flex;
         justify-content: space-between;
     }
-    .back-img{
-        margin-left: 80px;
-    }
+
     .section-menu{
     position: fixed;
     left: 0;
