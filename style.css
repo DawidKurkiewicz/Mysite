@@ -2,13 +2,24 @@
 body{
     margin: 0;
     background: grey;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     color: white;
+}
+#Tech {
+    background: #383838;
+
+}
+.section-tech__title {
+    margin: 0;
+    padding: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
 }
 .section-tech__container {
     display: flex;
     justify-content: center;
-    background: grey;
+    justify-content:space-around;
 }
 .section-tech__child {
     text-align: center;
@@ -22,7 +33,6 @@ body{
     text-align: center;
     max-width: 280px;
     max-height: 280px;
-    font-style: italic;
 }
 .section-tech__photo {
     margin: 0 auto 20px;
@@ -35,17 +45,7 @@ body{
     background-color: slategray;
     overflow: hidden;
 }
-.section-tech__photo--margin{
-    margin: 0 auto 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid black;
-    width: 150px;
-    height: 150px;
-    background-color: slategray;
-    overflow: hidden;
-}
+
 .logo-img{
     max-width: 150px;
     max-height: 150px;
@@ -55,20 +55,25 @@ body{
     justify-content: center;
     background: grey;
     margin: 20px 0px;
-    font-size: 26px;
     align-items: center;
+    justify-content: space-around;
 }
+.section-me__title {
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-top: 40px;
+  }
 .section-me__text{
-    max-width: 400px;
     margin-left: 25px;
     text-align: center;
-    font-style: italic;
     margin-right: 25px;
+    flex-basis: 60%
 }
 .section-hero__header{
     color: white;
     font-size: 60px;
-    font-style: italic;
     text-align: center;
 }
 .section-hero__container{
@@ -79,7 +84,6 @@ body{
     background-size:100% 100%;
     max-height: 500px;
     margin: 20px 0px;
-    border-radius: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,14 +98,15 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    list-style-type: none;
     padding: 0;
     margin: 0;
  }
  .section-menu__list--item {
-    background-color: grey;
     flex-grow: 1;
 }
+.section-menu__list--link:hover {
+    background-color: black;
+  }
 .section-menu__list--link{
     background:#383838;
     text-align: center;
@@ -127,6 +132,31 @@ body{
     color: white;
     padding: 10px;
 }
+.section-cookies {
+    position: fixed;
+    font-size: 12px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    text-align: center;
+    opacity: 0.8;
+  }
+  .section-cookies__header{
+    font-size: 20px;
+  }
+  .section-cookies__text{
+    font-size: 15px;
+  }
+  .section-cookies__button {
+    background-color: #ee5a24;
+    height: 30px;
+    width: 100px;
+    border: 1px solid;
+  }
+  .cookies__hidden {
+    display: none;
+  }
 @media only screen and (max-width: 768px) {
     .section-me__container {
         display:flex;
@@ -143,26 +173,13 @@ body{
         margin: 0 auto;
         align-items: center;
     }
-    .back-img{
-        margin-top: 140px;
-    }
-    .section-tech__photo--margin{
-        margin-top: 120px;
-    }
+
     .section-menu__list{
         display: flex;
         flex-direction: column;
     }
 }
-@media only screen and (max-width: 1400px ) and (min-width: 768px ) {
-    .back-img{
-        margin-top: 50px;
-    }
-    .section-me__text{
-        margin-top: 50px;
-    }
 
-}
 
 
 
