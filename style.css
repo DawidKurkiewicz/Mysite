@@ -122,6 +122,10 @@ body{
     margin-right: 25px;
     flex-basis: 60%
 }
+.section-me__side{
+    display: flex;
+    align-items: center;
+}
 .section-hero__header{
     font-size: 60px;
     text-align: center;
@@ -265,3 +269,21 @@ body{
     display: none;
   }
 }
+@media only screen and (max-width: 1000px) {
+    .section-me__side{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .section-me__logos{
+        display: flex;
+        flex-direction: row;
+        
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .section-me__logos{
+        margin-right: 40px;
+    }
+}
+
